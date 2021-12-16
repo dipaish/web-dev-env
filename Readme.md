@@ -25,12 +25,12 @@ A simple php code is there by default
   Database Name: wordpress
   Database User: wordpress
   Database Password: wordpress
-
-``` phpmyadmin >> user accounts >> Add User Account >> Type the username and password as above
+```
+ phpmyadmin >> user accounts >> Add User Account >> Type the username and password as above
 Just make sure that you check the following options
 Database for user account
- Create database with same name and grant all privileges. ```
- 
+ Create database with same name and grant all privileges. 
+``` 
 - Step 2: Get to the browser and type localhost:83
 - Step 3: Follow the installation Process
 
