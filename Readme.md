@@ -4,7 +4,7 @@
 - Step3: Unzip it anywhere in your PC. Make sure that you don't delete this folder. 
 - Step4: Start your PowerShell and get into the folder (Step3)
 - Step5: Run the command in PowerShell 
- > docker-compose up -d
+ > ``` ** docker-compose up -d ```
 
 ## After a while, all your services are ready. 
 
