@@ -15,13 +15,13 @@
 
 ## Important Folders
 
-- src >> A folder where your php code is going to be located. 
+- **src** >> A folder where your php code is going to be located. 
 A simple php code is there by default
 
-- wordpress>> folder for your wordpress site
+- **wordpress** >> folder for your wordpress site
 
 ## To get started with wordpress
-- Step 1: Get to phpmyadmin and create a database as below:
+- Step 1: Get to **phpmyadmin** and create a database as below:
   Database Name: wordpress
   Database User: wordpress
   Database Password: wordpress
@@ -31,7 +31,7 @@ Just make sure that you check the following options
 Database for user account
  Create database with same name and grant all privileges. 
 ``` 
-- Step 2: Get to the browser and type localhost:83
+- Step 2: Get to the browser and type **localhost:83**
 - Step 3: Follow the installation Process
 
 
