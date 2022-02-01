@@ -18,10 +18,14 @@ services:
     restart: always #this restarts the service upon any configuration changes
     environment: # to use and access MySQL server,we neet to set up an authentication environment
       MYSQL_ROOT_PASSWORD: password
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      MYSQL_DATABASE: wordpress
     ports:
       - "6034:3306"   #6034 in the the local machine and 3306 in the container
     volumes: # it persists updates made to the database
-      - dbdata:/var/lib/mysql
+#     - db_data:/var/lib/mysql
+      - ./db:/var/lib/mysql
     networks:
       - lan
 
