@@ -12,19 +12,19 @@ services:
       - .env
     networks:
       - lan
-      
+
   db: # mysql database server
     image: mysql:latest
     restart: always #this restarts the service upon any configuration changes
     environment: # to use and access MySQL server,we neet to set up an authentication environment
       MYSQL_ROOT_PASSWORD: password
-      WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: wordpress
       MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
     ports:
       - "6034:3306"   #6034 in the the local machine and 3306 in the container
     volumes: # it persists updates made to the database
-#     - db_data:/var/lib/mysql
+      #     - db_data:/var/lib/mysql
       - ./db:/var/lib/mysql
     networks:
       - lan
@@ -39,9 +39,9 @@ services:
     environment:
       PMA_HOST: db
     networks:
-      - lan 
-     
-   # Wordpress
+      - lan
+
+    # Wordpress
   wordpress:
     depends_on:
       - db
@@ -49,8 +49,8 @@ services:
     ports:
       - '83:80'
     restart: always
-    volumes: 
-     - ./wordpress:/var/www/html
+    volumes:
+      - ./wordpress:/var/www/html
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
@@ -58,7 +58,7 @@ services:
       MYSQL_DATABASE: wordpress
     networks:
       - lan
-  
+
 volumes:
   dbdata:
 networks:
