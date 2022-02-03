@@ -1,8 +1,3 @@
-/src/
-/wordpress/
-/.env
-/.gitattributes
-/Dockerfile
 /.idea
 /db/#ib_16384_0.dblwr
 /db/#ib_16384_1.dblwr
