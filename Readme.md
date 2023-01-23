@@ -1,6 +1,6 @@
 ## How to get this docker services up and running? 
 - Step1: Make sure that **Docker Desktop** is running
-- Step2: Download the Zipped file https://github.com/dipaish/php-course/archive/refs/heads/master.zip
+- Step2: Download the Zipped file https://github.com/dipaish/web-dev-env/archive/refs/heads/main.zip
 - Step3: Unzip it anywhere in your PC. Make sure that you don't delete this folder. 
 - Step4: Start your PowerShell and get into the folder (Step3)
 - Step5: Run the command in PowerShell 
