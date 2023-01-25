@@ -8,8 +8,6 @@ services:
       - 81:80
     volumes:
       - ./src:/var/www/html/
-    env_file:
-      - .env
     networks:
       - lan
       

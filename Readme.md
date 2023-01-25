@@ -2,8 +2,8 @@
 - Step1: Make sure that **Docker Desktop** is running
 - Step2: Download the Zipped file https://github.com/dipaish/web-dev-env/archive/refs/heads/main.zip
 - Step3: Unzip it anywhere in your PC. Make sure that you don't delete this folder. 
-- Step4: Start your PowerShell and get into the folder (Step3)
-- Step5: Run the command in PowerShell 
+- Step4: Start your **Visual Studio Code** and open the folder that you have unizziped recently.
+- Step5: Start **terminal** in Visual studio code and run the following command: 
   ``` docker-compose up -d ```
 
 ## After a while, all your services are ready. 
@@ -20,6 +20,11 @@ A simple php code is there by default
 
 - **wordpress** >> folder for your wordpress site
 
+## php.ini
+The folder contains php.ini. If you need to configure your php setup, you can make required changes to the file. After making changes, execute the following command: 
+
+  ```docker compose up -d --build ```
+
 ## To get started with wordpress
 - Step 1: Get to **phpmyadmin** and create a database as below:
   Database Name: wordpress
@@ -33,6 +38,13 @@ Database for user account
 ``` 
 - Step 2: Get to the browser and type **localhost:83**
 - Step 3: Follow the installation Process
+
+## Recommended Extensions for VSC 
+- Docker
+- Docker Explorer
+- GitHub Repositories
+- GitHub Pull Requests & Issues
+- PHP (All-in-One PHP Support)
 
 ## Learn Docker Compose
 - **Use Docker Compose:** https://docs.microsoft.com/en-us/visualstudio/docker/tutorials/use-docker-compose 
