@@ -21,7 +21,7 @@ A simple php code is there by default
 - **wordpress** >> folder for your wordpress site
 
 ## php.ini
-The folder contains php.ini. If you need to configure your php setup, you can make required changes to the file. After making changes, execute the following command: 
+The folder contains php.ini. If you need to configure your php setup, you can make required changes to the file. After making changes, execute the following command by starting **terminal** in Visual studio code: 
 
   ```docker compose up -d --build ```
 
