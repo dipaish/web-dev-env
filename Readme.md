@@ -20,7 +20,7 @@ A simple php code is there by default
 
 - **wordpress** >> folder for your wordpress site
 
-## To get started with wordpress
+## If you need a wordpress website, please follow the guidelines below:
 - Step 1: Get to **phpmyadmin** and create a database as below:
   Database Name: wordpress
   Database User: wordpress
