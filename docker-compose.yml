@@ -13,7 +13,7 @@ services:
       - lan
       
   db: # mysql database server
-    image: mysql:latest
+    image: mysql:8.0.34
     restart: always #this restarts the service upon any configuration changes
     environment: # to use and access MySQL server,we neet to set up an authentication environment
       MYSQL_ROOT_PASSWORD: password
@@ -35,25 +35,7 @@ services:
       PMA_HOST: db
     networks:
       - lan 
-     
-   # Wordpress
-  wordpress:
-    depends_on:
-      - db
-    image: wordpress:latest
-    ports:
-      - '83:80'
-    restart: always
-    volumes: 
-     - ./wordpress:/var/www/html
-    environment:
-      WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: wordpress
-      MYSQL_DATABASE: wordpress
-    networks:
-      - lan
-  
+      
 volumes:
   dbdata:
 networks:
