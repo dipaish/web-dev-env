@@ -1,0 +1,28 @@
+services:
+  firstname_php:
+    build: .
+    volumes:
+      - ./public:/var/www/html
+    ports:
+      - "81:80"
+
+  datab:
+    image: mysql:latest
+    env_file:
+      - db.env
+    ports:
+      - "3309:3306"
+    volumes:
+      - db_data1:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: datab
+    env_file:
+      - db.env
+    ports:
+      - "82:80"
+
+volumes:
+  db_data1:
